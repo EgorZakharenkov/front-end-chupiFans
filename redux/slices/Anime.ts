@@ -8,7 +8,7 @@ export const getAnimes = createAsyncThunk("anime/getAnimes", async () => {
 export const searchAnimes = createAsyncThunk(
   "anime/search",
   async (search: string) => {
-    return await api.get(`/title/search?search=${search}&limit=10`);
+    return await api.get(`/title/search?search=${search}&limit=50`);
   },
 );
 

@@ -4,13 +4,16 @@ import styles from "./style.module.scss";
 import { Button } from "@/components/ui/button";
 import { useAppDispatch } from "@/redux/hooks";
 import { searchAnimes } from "@/redux/slices/Anime";
+import { useRouter } from "next/navigation";
 
 const Search: React.FC = () => {
   const [search, setSearch] = useState<string>("");
   const dispatch = useAppDispatch();
+  const router = useRouter();
   const handleSearch = async (e: any) => {
     e.preventDefault();
     dispatch(searchAnimes(search));
+    router.push("/");
   };
   return (
     <div className={styles.searchContainer}>
