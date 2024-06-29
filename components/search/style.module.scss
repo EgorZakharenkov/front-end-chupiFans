@@ -1,0 +1,57 @@
+/* Variables */
+$background-color: #1a1a1a;
+$text-color: #f0f0f0;
+$accent-color: #f1f1f1;
+$border-color: #333;
+$input-bg-color: #2c2c2c;
+$input-text-color: #e0e0e0;
+$input-placeholder-color: #666;
+$button-bg-color: $accent-color;
+$button-text-color: #000;
+
+/* Container */
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: $background-color;
+  padding: 10px 15px;
+  border-radius: 10px;  // закругленные углы
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); // увеличенная тень
+}
+
+/* Input */
+.searchInput {
+  flex-grow: 1;
+  padding: 10px 45px 10px 15px;
+  margin-right: 10px;
+  border: 1px solid $border-color;
+  border-radius: 8px;  // закругленные углы
+  background-color: $input-bg-color;
+  color: $input-text-color;
+  font-size: 16px;
+
+  &::placeholder {
+    color: $input-placeholder-color;
+  }
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
+}
+
+/* Button */
+.searchButton {
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;  // закругленные углы
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;  // добавлен переход на изменение трансформации
+
+  &:hover {
+    background-color: darken($button-bg-color, 10%);
+    transform: translateY(-2px);  // легкое поднятие при наведении
+  }
+}

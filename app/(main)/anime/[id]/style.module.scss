@@ -1,0 +1,69 @@
+.animePage {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #121212; // Dark background color
+
+  .header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e; // Slightly lighter dark color for contrast
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); // Darker shadow
+
+    .image {
+      width: 300px;
+      height: auto;
+    }
+
+    .info {
+      flex: 1;
+      padding: 20px;
+
+      .title {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #ffffff; // White color for text
+      }
+
+      .description {
+        margin-bottom: 20px;
+        color: #cccccc; // Light gray color for description
+      }
+
+      .genres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .genre {
+          background-color: #333333; // Dark gray background for genres
+          border-radius: 5px;
+          padding: 5px 10px;
+          font-size: 0.9em;
+          color: #ffffff; // White color for text
+        }
+      }
+    }
+  }
+
+  .player {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1e1e1e; // Slightly lighter dark color for contrast
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); // Darker shadow
+
+    .video {
+      width: 100%;
+      height: 600px; // Adjust as needed
+    }
+  }
+}

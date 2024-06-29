@@ -1,0 +1,29 @@
+/* style.module.scss */
+
+.animePlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .selectEpisode,
+  .selectQuality {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #333; /* темная рамка */
+    border-radius: 4px;
+    background-color: #555; /* темный фон */
+    color: #fff; /* белый текст */
+  }
+
+  .selectEpisode {
+    margin-bottom: 0.5rem; /* дополнительный отступ для разделения */
+  }
+
+  .videoPlayer {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
