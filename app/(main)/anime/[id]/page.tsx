@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { List } from "@/types/anime.types";
 import { getCurrentAnime } from "@/api";
 import styles from "./style.module.scss";
-import Player from "@/components/Player/Player";
 import AnimePlayer from "@/components/Player/Player";
 export default function Page({
   params,
@@ -21,7 +20,6 @@ export default function Page({
   }, [params.id]);
 
   if (!anime) return <div>Loading...</div>;
-  console.log(anime);
   return (
     <div className={styles.animePage}>
       <div className={styles.header}>
@@ -48,5 +46,3 @@ export default function Page({
     </div>
   );
 }
-
-export { Page };
