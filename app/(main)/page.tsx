@@ -21,8 +21,10 @@ export default function Page() {
               key={anime.id}
               id={anime.id}
               title={anime.names.ru}
-              image={anime.posters.small.url}
+              image={anime.posters.medium.url}
               description={anime.description}
+              resolution={"1080p"}
+              rating={"5.0"}
             />
           ))
         : "ЗАгрузка"}

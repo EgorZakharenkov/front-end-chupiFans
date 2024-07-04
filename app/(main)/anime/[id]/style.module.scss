@@ -1,69 +1,54 @@
 .animePage {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #121212; // Dark background color
+}
 
-  .header {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 20px;
-    background-color: #1e1e1e; // Slightly lighter dark color for contrast
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); // Darker shadow
+.header {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  background-color: #1e1e1e; // Темный фон
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
 
-    .image {
-      width: 300px;
-      height: auto;
-    }
+.image {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
 
-    .info {
-      flex: 1;
-      padding: 20px;
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-      .title {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: #ffffff; // White color for text
-      }
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-      .description {
-        margin-bottom: 20px;
-        color: #cccccc; // Light gray color for description
-      }
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-      .genres {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-        .genre {
-          background-color: #333333; // Dark gray background for genres
-          border-radius: 5px;
-          padding: 5px 10px;
-          font-size: 0.9em;
-          color: #ffffff; // White color for text
-        }
-      }
-    }
-  }
-
-  .player {
-    width: 100%;
-    max-width: 1200px;
-    background-color: #1e1e1e; // Slightly lighter dark color for contrast
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); // Darker shadow
-
-    .video {
-      width: 100%;
-      height: 600px; // Adjust as needed
-    }
-  }
+.genre {
+  background-color: #363535;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
 }

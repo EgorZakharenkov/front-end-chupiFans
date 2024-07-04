@@ -4,6 +4,7 @@ import { List } from "@/types/anime.types";
 import { getCurrentAnime } from "@/api";
 import styles from "./style.module.scss";
 import AnimePlayer from "@/components/Player/Player";
+
 export default function Page({
   params,
 }: {
@@ -21,7 +22,7 @@ export default function Page({
 
   if (!anime) return <div>Loading...</div>;
   return (
-    <div className={styles.animePage}>
+    <div className={`${styles.animePage} dark:`}>
       <div className={styles.header}>
         <img
           src={`https://static-libria.weekstorm.one${anime.posters.medium.url}`}

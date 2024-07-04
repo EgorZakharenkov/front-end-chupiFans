@@ -3,7 +3,9 @@ import { AnimeList } from "@/types/anime.types";
 import { api } from "@/axios/axiosBase";
 
 export const getAnimes = createAsyncThunk("anime/getAnimes", async () => {
-  return await api.get("/title/changes?filter=posters,names,id&limit=50");
+  return await api.get(
+    "/title/changes?filter=posters,names,description,id&limit=25",
+  );
 });
 export const searchAnimes = createAsyncThunk(
   "anime/search",
