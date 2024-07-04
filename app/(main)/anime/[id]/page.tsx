@@ -22,13 +22,15 @@ export default function Page({
 
   if (!anime) return <div>Loading...</div>;
   return (
-    <div className={`${styles.animePage} dark:`}>
+    <div className={styles.animePage}>
       <div className={styles.header}>
-        <img
-          src={`https://static-libria.weekstorm.one${anime.posters.medium.url}`}
-          alt={anime.names.ru}
-          className={styles.image}
-        />
+        <div className={styles.imageWrapper}>
+          <img
+            src={`https://static-libria.weekstorm.one${anime.posters.medium.url}`}
+            alt={anime.names.ru}
+            className={styles.image}
+          />
+        </div>
         <div className={styles.info}>
           <h1 className={styles.title}>{anime.names.ru}</h1>
           <p className={styles.description}>{anime.description}</p>

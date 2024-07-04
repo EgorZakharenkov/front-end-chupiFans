@@ -1,15 +1,12 @@
 "use client";
 import { AnimeCard } from "@/components/card/Card";
-import React, { useEffect, useState } from "react";
-import { AnimeList } from "@/types/anime.types";
+import React, { useEffect } from "react";
 import styles from "./style.module.scss";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { getAnimes } from "@/redux/slices/Anime";
-import { RootState } from "@/redux/store";
 export default function Page() {
   const dispatch = useAppDispatch();
   const anime = useAppSelector((state) => state.anime.anime);
-  console.log(anime);
   useEffect(() => {
     dispatch(getAnimes());
   }, []);
@@ -27,7 +24,7 @@ export default function Page() {
               rating={"5.0"}
             />
           ))
-        : "ЗАгрузка"}
+        : "Загрузка"}
     </div>
   );
 }
